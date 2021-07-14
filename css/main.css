@@ -1,0 +1,42 @@
+body {
+    background-color: #777777;
+    margin: 0;
+}
+
+.topnav {
+  background-color: #4B4B4B;
+  overflow: hidden;
+  height: 70px;
+}
+
+.topnav logo {
+  float: left;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 70px;
+  height: 70px;
+}
+
+.topnav tab {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px 10px;
+  line-height: 70px;
+  text-decoration: none;
+  height: 70px;
+  font-size: 23px;
+  font-family: "EB Garamond";
+
+}
+
+.topnav tab:hover {
+  background-color: #777777;
+  color: white;
+}
+
+.topnav tab.active {
+  background-color: #1b187e;
+  color: white;
+}
