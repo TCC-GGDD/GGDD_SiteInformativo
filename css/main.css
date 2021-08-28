@@ -1,6 +1,7 @@
 body {
-    background-color: #777777;
-    margin: 0;
+  background: rgb(33,33,33);
+  background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(75,75,75,1) 50%, rgba(119,119,119,1) 100%);
+  margin: 0;
 }
 
 .topnav {
@@ -9,34 +10,34 @@ body {
   height: 70px;
 }
 
-.topnav logo {
-  float: left;
-  text-align: center;
-  margin-right: 10px;
-  margin-left: 10px;
-  width: 70px;
-  height: 70px;
-}
+  .topnav logo {
+    float: left;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 70px;
+    height: 70px;
+  }
 
-.topnav tab {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 0px 10px;
-  line-height: 70px;
-  text-decoration: none;
-  height: 70px;
-  font-size: 23px;
-  font-family: "EB Garamond";
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0px 10px;
+    line-height: 70px;
+    text-decoration: none;
+    height: 70px;
+    font-size: 23px;
+    font-family: "EB Garamond";
 
-}
+  }
 
-.topnav tab:hover {
-  background-color: #777777;
-  color: white;
-}
+    .topnav a:hover {
+      background-color: #777777;
+      color: white;
+    }
 
-.topnav tab.active {
-  background-color: #1b187e;
-  color: white;
-}
+    .topnav a.active {
+      background-color: #1b187e;
+      color: white;
+    }
