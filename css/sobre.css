@@ -1,4 +1,81 @@
-body {
-    background: rgb(33,33,33);
-    background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(75,75,75,1) 50%, rgba(119,119,119,1) 100%);
+html {
+  height: 100%;
+  width: 100%;
 }
+
+body {
+  height: 100%;
+  background: rgb(75,75,75);
+  background: linear-gradient(180deg,rgba(75,75,75,1), rgba(119,119,119,1) 100%);
+  margin: 0;
+  display: flex;
+  flex-direction: column; 
+  /* background-repeat: no-repeat; */
+  /*background-attachment: fixed;*/
+}
+
+.topnav {
+  background: rgb(0,0,0);
+  background: linear-gradient(270deg, rgba(75,75,75,1) 0%, rgba(33,33,33,1) 50%, rgba(0,0,0,1) 100%);
+  /*background-color: #4B4B4B;*/
+  overflow: hidden;
+  height: 4.4rem;
+  width: 100%;
+}
+
+  .topnav .logo {
+    float: left;
+    text-align: center;
+    margin-right: .7rem;
+    margin-left: .7rem;
+
+  }
+
+    .topnav .logo .imglogo{
+      width: 4.4rem;
+      height: 4rem;
+    }
+
+  .topnav .tab {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0 1.5rem;
+    line-height: 4.4rem;
+    text-decoration: none;
+    height: 4.4rem;
+    font-size: 1.4rem;
+    font-family: "EB Garamond";
+
+  }
+
+    .topnav .tab:hover {
+      background-color: #4B4B4B;
+      color: white;
+    }
+
+    .topnav .tab.active {
+      background-color: #1b187e;
+      color: white;
+    }
+
+
+.content {
+  flex: 1;
+}
+
+.footer{
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(75,75,75,1) 0%, rgba(33,33,33,1) 50%, rgba(0,0,0,1) 100%);
+  padding: .7rem 2rem;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: .8rem;
+}
+
+  
+  .footer .copyright{
+      color: #fff;
+  }
