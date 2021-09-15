@@ -80,6 +80,14 @@ body {
       padding: 1rem 4rem;
     }
 
+      .left p {
+        text-align: left;
+      }
+
+      .right p {
+        text-align: right;
+      }
+
       .first {
         background-color: rgb(20, 20, 20);
       }
@@ -111,7 +119,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: .8rem;
 }
 
   
