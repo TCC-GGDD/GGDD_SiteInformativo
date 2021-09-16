@@ -61,23 +61,64 @@ body {
   text-align: center;
 }
 
-  .briefcontainer {
-    background-color: #1b187e;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+  .mainbanner {
+    position: relative;
+    height: 34rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
   }
+  
+  .mainbanner::before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background-image: url("../img/Foto_capa.jpg");
+      background-size: 100% auto;
+      background-position: center;
+      opacity: 0.4;
+    }
+  
 
-    .brieftitle {
-      padding-top: .2rem;
+    .mainbanner h1{
+      position: relative;
+      color: white;
+      font-size: 6rem;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-top: 9rem;
+      margin-top: 0;
     }
 
-    .brieftext {
-      padding: .5rem 0 1rem;
+    .mainbanner p{
+      position: relative;
+      color: white;
+      font-size: 2rem;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-bottom: 2rem;
+    }
+
+    .downloadbutton {
+      position: relative;
+      background-color: #1b187e;
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    .downloadbutton:hover {
+      padding: 1.5rem 2.5rem;
+      background-color: darkblue;
     }
 
   .funcionalidadestitle {
-    align-self: center;
+    text-align: center;
     color: white;
+    padding-bottom: 2rem;
   }
 
   .funcionalidadescontainer {
@@ -85,6 +126,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 3rem;
   }
     .funcionalidade {
       width: 30%;
@@ -100,29 +142,7 @@ body {
       margin-top: 0;
       margin-bottom: 1rem;
     }
-
-  .downloadcontainer {
-    color: white;
-    margin: 4rem 0 1.5rem;
-  }
-
-    .downloadtitle {
-      font-size: 1.2rem;
-      font-weight: bolder;
-    }
-
-    .downloadbutton {
-      background-color: #1b187e;
-      color: white;
-      text-decoration: none;
-      padding: .5rem .5rem;
-      border-radius: 10px;
-    }
-
-    .downloadbutton:hover {
-      padding: .6rem .6rem;
-      background-color: darkblue;
-    }
+    
 
 .footer {
   background: rgb(0,0,0);
