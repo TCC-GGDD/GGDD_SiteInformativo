@@ -60,6 +60,46 @@ body {
   flex: 1;
 }
 
+.mainbanner {
+  position: relative;
+  height: 34rem;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.mainbanner::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("../img/Foto_proposta3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    opacity: 0.4;
+  }
+
+
+  .mainbanner h1{
+    position: relative;
+    color: white;
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 9rem;
+    margin-top: 0;
+  }
+
+  .mainbanner p{
+    position: relative;
+    color: white;
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 2rem;
+  }
+
 .footer{
   background: rgb(0,0,0);
   background: linear-gradient(90deg, rgba(75,75,75,1) 0%, rgba(33,33,33,1) 50%, rgba(0,0,0,1) 100%);
