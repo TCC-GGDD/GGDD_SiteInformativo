@@ -59,13 +59,11 @@ body {
 .content {
   flex: 1;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: space-around
 }
-
-  .organization {
-    display: flex;
-    flex-direction: column;
-    color: white;
-  }
 
     .icon {
       align-self: center;
@@ -74,19 +72,16 @@ body {
     }
 
     .row {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
       padding: 1rem 4rem;
+      flex: 1;
     }
 
-      .left p {
-        text-align: left;
+      .rowtext {
+        justify-content: center;
+        text-align: center;
+        padding: 0 6rem;
       }
 
-      .right p {
-        text-align: right;
-      }
 
       .first {
         background-color: rgb(20, 20, 20);

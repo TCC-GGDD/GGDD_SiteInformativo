@@ -56,10 +56,6 @@ body {
       color: white;
     }
     
-.content {
-  flex: 1;
-}
-
 .mainbanner {
   position: relative;
   height: 34rem;
@@ -98,6 +94,15 @@ body {
     font-size: 1.8rem;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 2rem;
+  }
+
+
+  .content {
+    flex: 1;
+  }
+
+  .secao {
+    color: white;
   }
 
 .footer{
