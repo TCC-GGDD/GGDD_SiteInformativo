@@ -7,37 +7,36 @@
   <script src="https://kit.fontawesome.com/0875327e82.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <script src="../js/app.js"></script>
+
     <h1 class="title">Monte a base do seu GGDD</h1>
     <div class="formcontainer">
-        <label class="formlabel">Nome</label>
+        <label class="formlabel">Nome do jogo</label>
         <input class="forminput">
-        <label class="formlabel">Endereço</label>
+        <label class="formlabel">Nome do Autor/Empresa</label>
         <input class="forminput">
-        <label class="formlabel">Input</label>
+        <label class="formlabel">Descrição do jogo</label>
+        <textarea class="forminput" rows="5"></textarea>
+        <label class="formlabel">Descrição do ambiente/clima do jogo</label>
+        <textarea class="forminput" rows="5"></textarea>
+        <label class="formlabel">Gênero</label>
         <input class="forminput">
-        <label class="formlabel">Input</label>
+        <label class="formlabel">Público-alvo</label>
         <input class="forminput">
-        <label class="formlabel">Input</label>
-        <input class="forminput">
-        <label class="formlabel">Input</label>
-        <input class="forminput">
-        <label class="formlabel">Input</label>
-        <input class="forminput">
-        <label class="formlabel">Input</label>
-        <input class="forminput">
-        <label class="formlabel">Input</label>
-        <input class="forminput">
-        <label class="formlabel">Input</label>
-        <input class="forminput">
-        <label class="formlabel">Input</label>
-        <input class="forminput">
-        <label class="formlabel">Input</label>
-        <input class="forminput">
-        <label class="formlabel">Input</label>
-        <input class="forminput">
-        <label class="formlabel">Input</label>
-        <input class="forminput">
-        <label class="formlabel">Input</label>
-        <input class="forminput">
+        <label class="formlabel">Plataformas alvo</label>
+        <textarea class="forminput" rows="5"></textarea>
+        <label class="formlabel">Data de início do projeto</label>
+        <input type="date" class="forminput">
+        <label class="formlabel">Data estimada de término do projeto</label>
+        <input type="date" class="forminput">
+        <div class="buttonscontainer">
+          <a class="formbutton backbutton" href="download.html">Voltar</a>
+          <a class="formbutton downloadbutton" onclick="loadFormData()">Download</a>
+        </div>
+    </div>
+    <div class="footer">
+      <div class="copyright">GGDD ©Gabriela Chaves de Moraes</div>
+      <div class="copyright"> ©Lucas Arthur Lermen</div>
     </div>
 </body>
+</html>

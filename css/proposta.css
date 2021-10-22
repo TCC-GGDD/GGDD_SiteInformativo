@@ -61,7 +61,6 @@ body {
   height: 34rem;
   justify-content: center;
   text-align: center;
-  margin-bottom: 1rem;
 }
 
 .mainbanner::before {
@@ -96,14 +95,67 @@ body {
     padding-bottom: 2rem;
   }
 
+  .secoesnavbar {
+    background-color: black;
+    height: 4.5rem;
+  }
+
+    .container {
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;      
+      background-color: black;
+    }
+
+    .container a {
+      padding: .4rem;
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    .container a:hover {
+      background-color: rgb(55, 55, 55);
+    }
 
   .content {
     flex: 1;
   }
 
-  .secao {
+  .secoes{
+    margin-left: 2.3rem;
+    margin-right: 3rem;
+    margin-top: 5rem;
     color: white;
   }
+
+    .secao {
+      margin-bottom: 2rem;
+      width: 80%;
+    }
+
+      .secao p {
+        font-size: 1.5rem;
+        text-align: justify;
+      }
+
+      .right {
+        direction: rtl;
+        margin-left: auto;
+      }
+
+
+  .download {
+    text-align: center;
+    float: none;
+    margin-bottom: 1rem;
+  }
+
+    .download a{
+      font-size: 1.3rem;
+      color: rgb(31, 10, 150);
+    }
 
 .footer{
   background: rgb(0,0,0);
@@ -115,7 +167,6 @@ body {
   align-items: flex-end;
 }
 
-  
   .footer .copyright{
       color: #fff;
   }
