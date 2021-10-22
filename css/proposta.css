@@ -98,7 +98,19 @@ body {
   .secoesnavbar {
     background-color: black;
     height: 4.5rem;
+    overflow: hidden;
   }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    
+    /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+    .sticky + .content {
+      padding-top: 60px;
+    }
 
     .container {
       color: white;
@@ -133,6 +145,8 @@ body {
     .secao {
       margin-bottom: 2rem;
       width: 80%;
+      margin-top: -4rem;
+      padding-top: 4rem;
     }
 
       .secao p {

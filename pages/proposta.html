@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="../css/proposta.css">
 </head>
 <body>
-  <div class="topnav">
+   <div class="topnav">
     <a class="logo" href="../index.html"><img class="imglogo" src="../img/Logo_GGDD.png"></a>
     <a class="tab" href="proposta.html">Proposta</a>
     <a class="tab" href="download.html">Download</a>
@@ -17,12 +17,12 @@
       <h1>Modelo do GGDD</h1>
       <p> Aqui apresentamos todas as seções do nosso documento para você</p>
     </div>
-    <div class="secoesnavbar">
+    <div class="secoesnavbar" id="stickyNavBar">
       <div class="container">
           <a href="#historico">Histórico de versão</a>
           <a href="#brainstorming">Brainstorming</a>
           <a href="#visaoGeral">Visão Geral</a>
-          <a href="##fatoresCompetitivos">Fatores Competitivos</a>
+          <a href="#fatoresCompetitivos">Fatores Competitivos</a>
           <a href="#gameplay">Gameplay e Mecânicas Principais</a>
           <a href="#aspectos">Aspectos de Qualidade</a>
           <a href="#historia">História</a>
@@ -162,5 +162,21 @@
     <div class="copyright">GGDD ©Gabriela Chaves de Moraes</div>
     <div class="copyright"> ©Lucas Arthur Lermen</div>
   </div>
+
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("stickyNavBar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+
 </body>
 </html>
