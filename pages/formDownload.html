@@ -4,36 +4,59 @@
   <meta charset="UTF-8">
   <title>GGDD</title>
   <link rel="stylesheet" href="../css/formDownload.css">
+  <link rel="icon" href="../img/Logo_GGDD.png">
   <script src="https://kit.fontawesome.com/0875327e82.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <script src="../js/formDownload.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="../js/formDownload.js"></script>
 
     <h1 class="title">Monte a base do seu GGDD</h1>
-    <div class="formcontainer">
-        <label class="formlabel">Nome do jogo</label>
-        <input class="forminput">
-        <label class="formlabel">Nome do Autor/Empresa</label>
-        <input class="forminput">
-        <label class="formlabel">Descrição do jogo</label>
-        <textarea class="forminput" rows="5"></textarea>
-        <label class="formlabel">Descrição do ambiente/clima do jogo</label>
-        <textarea class="forminput" rows="5"></textarea>
-        <label class="formlabel">Gênero</label>
-        <input class="forminput">
-        <label class="formlabel">Público-alvo</label>
-        <input class="forminput">
-        <label class="formlabel">Plataformas alvo</label>
-        <textarea class="forminput" rows="5"></textarea>
-        <label class="formlabel">Data de início do projeto</label>
-        <input type="date" class="forminput">
-        <label class="formlabel">Data estimada de término do projeto</label>
-        <input type="date" class="forminput">
-        <div class="buttonscontainer">
-          <a class="formbutton backbutton" href="download.html">Voltar</a>
-          <a class="formbutton downloadbutton" onclick="loadFormData()">Download</a>
-        </div>
-    </div>
+    <form class="formcontainer" id="myForm" onsubmit="loadFormData(event)">
+
+      <label class="formlabel" for="jogo">Nome do jogo<strong>*</strong></label>
+      <input class="forminput" id="jogo" name="jogo" required>
+
+      <label class="formlabel" for="autor">Nome do Autor/Empresa<strong>*</strong></label>
+      <input class="forminput" id="autor" name="autor" required>
+
+      <label class="formlabel" for="descricaojogo">Descrição do jogo</label>
+      <textarea class="forminput" rows="5" id="descricaojogo" name="descricaojogo"></textarea>
+
+      <label class="formlabel" for="descricaoclima">Descrição do ambiente/clima do jogo</label>
+      <textarea class="forminput" rows="5" id="descricaoclima" name="descricaoclima"></textarea>
+
+      <label class="formlabel" for="genero">Gênero</label>
+      <input class="forminput" id="genero" name="genero">
+
+      <label class="formlabel" for="publico">Público-alvo</label>
+      <input class="forminput" id="publico" name="publico">
+
+      <label class="formlabel" for="plataformas">Plataformas alvo</label>
+      <textarea class="forminput" rows="5" id="plataformas" name="plataformas"></textarea>
+
+      <label class="formlabel" for="datainicio">Data de início do projeto<strong>*</strong></label>
+      <input type="date" class="forminput" id="datainicio" name="datainicio" required>
+
+      <label class="formlabel" for="datafim">Data estimada de término do projeto</label>
+      <input type="date" class="forminput" id="datafim" name="datafim">
+
+      <div class="buttonscontainer">
+        <button 
+          type="button"
+          onclick="checaVoltar()" 
+          class="formbutton backbutton"
+        >
+          Voltar
+      </button>
+        <button
+          type="submit"
+          class="formbutton downloadbutton"
+        >
+          Download
+        </button>
+      </div>
+    </form>
     <div class="footer">
       <div class="copyright">GGDD ©Gabriela Chaves de Moraes</div>
       <div class="copyright"> ©Lucas Arthur Lermen</div>
